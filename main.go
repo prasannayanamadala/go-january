@@ -1,9 +1,13 @@
 package main
 
-import "github.com/prasannayanamadala/go-jan/go-january/practice"
+import (
+	 "github.com/prasannayanamadala/go-jan/go-january/arrays"
+	//"github.com/prasannayanamadala/go-jan/go-january/practice"
+)
 
 func main() {
 	
-	calculator.CalOperation()
+	//calculator.CalOperation()
+	array.ArrayDefine()
 }
 
