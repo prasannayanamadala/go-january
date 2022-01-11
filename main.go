@@ -8,6 +8,7 @@ import (
 func main() {
 	
 	//calculator.CalOperation()
-	array.ArrayDefine()
+	//array.ArrayDefine()
+	array.SliceDefine()
 }
 
