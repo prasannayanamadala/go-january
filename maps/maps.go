@@ -29,7 +29,6 @@ func MapsDefine() {
 		fmt.Println(key)
 	}
 
-
 	for _, val:=range mapsofworkers { // only value printed
 		fmt.Println(val)
 	}
