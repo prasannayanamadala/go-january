@@ -18,6 +18,23 @@ func MapsDefine() {
 	fmt.Println(mapsofworkers)
 	fmt.Println(mapsofworkers["team4"])    //unassigned elements will print default value i.e 0
 	
+  //for range loop is mostly used in maps
+
+	for key,val :=range mapsofworkers { // key and value both are printed
+		mapsofworkers[key]=val+10
+	}
+	fmt.Println(mapsofworkers)
+
+	for key, _:=range mapsofworkers { // only key printed
+		fmt.Println(key)
+	}
+
+
+	for _, val:=range mapsofworkers { // only value printed
+		fmt.Println(val)
+	}
+	fmt.Println(mapsofworkers)
+	
 	if _, ok := mapsofworkers["team2"]; ok {    //checking if key is present or not (key present "ok")
 		fmt.Println("Key is present:",ok)
 }

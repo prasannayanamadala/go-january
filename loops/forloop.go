@@ -23,6 +23,15 @@ func ForLoop() {
 	price1 := price[3]
 	fmt.Println("price1",price1)
 	
+
+	//other way of using for loop
+
+	loopvariable := 2
+	for loopvariable <=13 {
+		fmt.Println(loopvariable)
+		loopvariable++
+	}
+	
 	
 
 	
