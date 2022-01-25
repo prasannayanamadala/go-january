@@ -7,6 +7,18 @@ func ForLoop() {
 	for i:=0 ; i <5 ; i++ {
 		fmt.Println("Values of i :",i)
 	}
+	for i:=0 ; i <=39 ; i=i+1 { 
+		if i == 20 {
+			break                  //break:break keyword in for
+		}               
+		fmt.Println(i) 
+	}
+	for n:=0; n<=5;n++ {
+	if n%2==0 {        //0,2,4
+		continue                 //continue keyword in for
+	}
+	fmt.Println(n)
+}
 	for i:=27 ; i <=37 ; i=i+5{                //loopinitializing,loop condition ,loop increment
 			fmt.Println("Values of i :",i)
 	}
@@ -31,8 +43,5 @@ func ForLoop() {
 		fmt.Println(loopvariable)
 		loopvariable++
 	}
-	
-	
-
 	
 }

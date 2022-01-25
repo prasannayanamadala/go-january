@@ -19,6 +19,9 @@ func ArrayDefine() {
 	//firstway:shorthand declaration in an array
 
 	grades := [3]int{grade1, grade2, grade3} //grades := [...]int{grade1, grade2, grade3}
+	
+	grades[2] =90 //changing one value in an array
+	
 	fmt.Println("grades in an array:",grades)
 	fmt.Println("grade1 address:", &grades[0])
 	fmt.Println("grade2 address:", &grades[1])
@@ -27,6 +30,12 @@ func ArrayDefine() {
 	firstgrade := grades[0]    //for accessing one value.Arrays are zero indexed
 	fmt.Println("first grade representation in an array:",firstgrade)
 	
+	 var x int8 =20
+     var y int8 =27
+     //var z int64 = 90
+
+    grades2 := [3]int8{x,y}
+    fmt.Println("Grades in an array:",grades2)
 
 	//second way:define
 

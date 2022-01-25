@@ -36,12 +36,12 @@ func IfStatement() {
 	//Elseif
 
 	sam := 3211
-	if sam >= 4222 {                      /*if statement can have any number of elseif statements.Else statement is not mandatory */
+	if sam >= 4222 {             /*if statement can have any number of elseif statements.Else statement is not mandatory */
 		fmt.Println("greater")
-	} else if sam < 2322 {
+	} else if sam > 2322 {
 		fmt.Println("smaller")
-	}else if sam >3211 {
-	fmt.Println("greater and equal")     /*if none of the statements is true it prints nothing */
+	}else if sam ==3211 {
+	fmt.Println("greater and equal") /*if none of the statements is true it prints nothing */
 	}else {
 		fmt.Println("done")
 	}
@@ -62,6 +62,3 @@ func IfStatement() {
 		}
 	}
 }
-
-
-

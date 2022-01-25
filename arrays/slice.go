@@ -4,7 +4,7 @@ import "fmt"
 
 func SliceDefine() {
 
-	slices := make([]int,0,20)
+	slices := make([]int,0,)
 	
 	//slices = append(slices,10,20,30,40,50,60,70,80,90,100)
 	//fmt.Println(slices)   //0, 1, 2, 3, 4, 5
