@@ -13,6 +13,13 @@ func SliceDefine() {
 		slices = append(slices,i)
 	}
 	fmt.Println(slices)
+
+	for i:= 0 ; i<len(slices) ; i++ {      //searching for one value in a slice using for and if
+		if slices[i]==20 {
+			fmt.Println(i)
+		}
+		fmt.Println(slices[i])
+	}
 	
 	for i:= 0 ; i<=len(slices)-1 ; i=i+1 {
 		if i==4 {
