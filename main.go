@@ -18,6 +18,7 @@ func main() {
 	//conditional.IfStatement()
 	//conditional.SwitchCondition()
 	//looping.ForLoop()
-	structures.StructPractice()
+	//structures.StructPractice()
+	structures.EmployeeDefine()
 }
 
