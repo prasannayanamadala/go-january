@@ -91,9 +91,14 @@ type EmployeeAddress struct {
 
 	//for range loop
 
-	for _,val := range employees{
+	for i,_ := range employees{ //for index
+		//fmt.Println(val)
+		fmt.Println(i)
+	}
+
+	for _,val := range employees{ //for val
 		fmt.Println(val)
-		//fmt.Println(employees[i])
+		//fmt.Println(i)
 	}
 	
 }
