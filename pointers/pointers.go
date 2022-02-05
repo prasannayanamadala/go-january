@@ -180,11 +180,14 @@ type Employee struct {
 	employees = append(employees,emp1,emp2)
 	fmt.Println(employees)
 	StructCheck(employees)
-	fmt.Println(employees)
+	fmt.Println(emp1)
 }
-func StructCheck([]Employee){
-	
-	fmt.Println()
+func StructCheck(employees []Employee){
+	var emp1 Employee
+	emp1.Name = "ss"
+	emp1.Salary = 250
+	emp1.Position = "helper"
+	fmt.Println(emp1)
 
 
 }
