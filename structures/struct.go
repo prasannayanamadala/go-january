@@ -91,7 +91,7 @@ type EmployeeAddress struct {
 
 	//for range loop
 	
-	for i,_ := range employees{ //for index
+	for i, _ := range employees{ //for index
 		//fmt.Println(val)
 		fmt.Println(i)
 	}

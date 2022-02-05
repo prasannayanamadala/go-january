@@ -10,7 +10,8 @@ import (
 	//"fmt"
 
 	//"github.com/prasannayanamadala/go-jan/go-january/functions"
-	"github.com/prasannayanamadala/go-jan/go-january/pointers"
+	 "github.com/prasannayanamadala/go-jan/go-january/goroutines"
+	//"github.com/prasannayanamadala/go-jan/go-january/pointers"
 )
 
 func main() {
@@ -50,7 +51,9 @@ func main() {
 	//pointers_test.CheckPassby()
 	//pointers_test.SliceCheckifpassby()
 	//pointers_test.MapsCheckpassby()
-	pointers_test.StructCheckifpassby()
+	//pointers_test.StructCheckifpassby()
+
+	goroutine.GoRoutineTest()
 	
 
 }
