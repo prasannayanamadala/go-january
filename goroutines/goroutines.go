@@ -8,9 +8,10 @@ import (
 		
 var wg = sync.WaitGroup{}
 
-func GoRoutineTest() {
-	fmt.Println("testing of goroutine")
-	x := 1
+//func GoRoutineTest() {
+	//fmt.Println("testing of goroutine")
+	//x := 1
+
  	//for i:=0; i<5 ; i++ {
 	
 // 	wg.Add(2)
@@ -31,14 +32,39 @@ func GoRoutineTest() {
 // 	fmt.Println("2nd func:",*a)
 // 	wg.Done()
 // }
-ch := make(chan int,1)
-ch <-x
-wg.Add(1)
-go SampleGoroutine(ch)
-wg.Wait()
-}
-func SampleGoroutine(ch chan int) {
+//ch := make(chan int,1)
+//ch <-x
+//wg.Add(1)
+//go SampleGoroutine(ch)
+//wg.Wait()
+//}
+//func SampleGoroutine(ch chan int) {
+	//val := <-ch
+	//fmt.Println(val)
+	//wg.Done()
+//}
+func GoRoutineTest() {
+	//fmt.Println("testing of goroutine")
+	
+	ch := make(chan int,2)
+	x := 1
+	for i:=0; i<5 ; i++ {
+	ch <-x
+ 	wg.Add(2)
+ 	go ParallelismTest(ch)
+	go NextFunc(ch)
+ 	wg.Wait()
+ 	}
+
+ }
+ func ParallelismTest(ch chan int) {
+
 	val := <-ch
-	fmt.Println(val)
-	wg.Done()
-}
+ 	fmt.Println("1st func:",val)
+ 	wg.Done()
+ }
+ func NextFunc(ch chan int) {
+ 	val1 := <-ch
+	fmt.Println("2nd func:",val1)
+ 	wg.Done()
+ }
