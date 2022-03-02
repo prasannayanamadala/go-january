@@ -13,6 +13,7 @@ import (
 	 //"github.com/prasannayanamadala/go-jan/go-january/goroutines"
 	//"github.com/prasannayanamadala/go-jan/go-january/pointers"
 	//"github.com/prasannayanamadala/go-jan/go-january/api"
+	"github.com/prasannayanamadala/go-jan/go-january/Example"
 )
 
 func main() {
@@ -56,8 +57,10 @@ func main() {
 
 	//goroutine.GoRoutineTest()
 	
-	
-	
+ soaps.SoapBars()
 
 }
+	
+
+
 
